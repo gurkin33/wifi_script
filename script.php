@@ -24,7 +24,7 @@ $conn_mysql = new mysqli(
 );
 if ($conn_mysql->connect_error) die($conn_mysql->connect_error);
 $conn_mysql->set_charset("utf8");
-
+echo "Here";
 $unexpired=array();
 $sql_take_all = "SELECT * FROM dehotel_wifi WHERE expired=0";
 
